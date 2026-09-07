@@ -35,7 +35,7 @@ use sprust::Client;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let token = std::env::var("SPROUSHTOKEN")?;
+    let token = std::env::var("TOKEN")?;
 
     let bot = Client::new(token);
 
